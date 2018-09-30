@@ -126,17 +126,25 @@
     }
 
     #phone-logo {
-        background-image: url(../assets/logo/SW-logo_basic.svg);
-        background-repeat: no-repeat;
-        background-position: center;
         background-color: rgb(42, 42, 42);
         height: 10vh;
         width: 10vh;
-        line-height: 10vh;
         border-bottom-right-radius: 20%;
         color: transparent;
         transition: all .1s .25s;
     }
+	
+	#phone-logo a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+	
+	#phone-logo a svg {
+		width: 100%;
+		height: 100%;
+	}
 
     .dropdown {
         display: block;
@@ -149,7 +157,7 @@
 
     }
 
-    #phone-logo:hover {
+    #phone-logo:active{
         border-bottom-right-radius: 0;
         transition: border-bottom-right-radius .05s;
     }
@@ -171,7 +179,7 @@
         text-decoration: none;
     }
 
-    #phone-logo:active .dropdown li {
+    #phone-logo:active .dropdown li{
         width: 200px;
     }
 
