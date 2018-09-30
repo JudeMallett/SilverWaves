@@ -1,0 +1,129 @@
+body {
+    font-family: montserrat, Sans-Serif;
+    background-image: url(../assets/pictures/red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+@keyframes backgroundAnimation {
+    0%{background-position:9% 0%}
+    50%{background-position:92% 100%}
+    100%{background-position:9% 0%}
+}
+
+form {
+    margin: 10vh auto;
+}
+
+#other {
+    visibility: hidden;
+}
+
+#otherSubject:checked ~ #other {
+    visibility: visible;
+}
+
+
+fieldset {
+    border-style: none;
+    width: 1000px;
+    max-width: 90vw;
+    margin: 10vh auto;
+    background-color: rgba(212,212,212,.8);
+    box-shadow: 0 0 10px 0 grey;
+    text-align: center;
+    padding: 1vh 0;
+}
+
+table {
+    text-align: left;
+    width: 80%;
+    margin: 0 10%;
+}
+
+#reason td {
+    width: 50%;
+}
+
+#contact {
+    width: 60%;
+    min-height: 200px;
+}
+
+/*FOOTER START */
+.social-buttons {
+    bottom: 0;
+    width: 100vw;
+    left: 0;
+    height: 5vw;
+}
+
+.social-buttons ul {
+    margin: 0 32.5vw;
+    padding: 0;
+    width: 40vw;
+    height: 5vw;
+
+}
+
+.social-buttons ul li {
+    height: 3vw;
+    width: 3vw;
+    padding: 1vw 2.3vw;
+    display: inline-block;
+}
+
+.social-buttons ul li a {
+    line-height: 3vw;
+    width: 3vw;
+    height: 3vw;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.social-buttons ul li a:hover  {
+    transform: scale(1.1,1.1);
+    box-shadow: black 0 0 25px;
+    transition: all .5s;
+}
+
+#facebook svg {
+    fill: #3b5998;
+}
+
+#twitter svg {
+    fill:  #0084b4;
+}
+
+#bandcamp svg {
+    fill: #629aa9;
+}
+
+#spotify svg {
+    fill: #84bd00;
+}
+/*FOOTER END */
+
+button {
+    color: rgb(21,21,21);
+    border-style: solid;
+    border-color: rgb(21,21,21);
+    border-radius: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: transparent;transition: all 0.5s;
+    margin: 0 20px;
+}
+
+button:hover {
+    transform: scale(1.1,1.1);
+    transition: all 0.2s;
+}

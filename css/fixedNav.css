@@ -1,0 +1,210 @@
+/* FIXED NAV CSS */
+
+
+.phone-nav {
+	display: none;
+}
+
+/*MAIN BAR STYLING*/
+.top-nav {
+    z-idex: 9999;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    Font-Size: 20px;
+    top: 0;
+    position:fixed;
+    width: 100%;
+    left: 0;
+    height: 70px;
+    background-color: rgba(45,45,45,.9);
+	box-shadow: 0 0 10px 0 black;
+ }
+
+ .top-nav ul {
+     margin: 0;
+     left: 0;
+     width: 100%;
+     height: 70px;
+     padding: 0;
+  }
+
+ .top-nav ul li {
+     height: 100%;
+     width: 20%;
+     display: inline-block;
+ }
+
+ 
+/*CENTER LOGO STYLING*/
+#logo {
+    padding-top: 5px;
+	float: left;
+    border: medium;
+    height: 85px;
+	background-image: url(../assets/logo/SW-logo_basic.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+    background-color: rgb(42,42,42);
+    box-shadow: black  0 0 20px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+
+
+.left-links {
+    float: left;
+ }
+
+.right-links {
+    float: left;
+ }
+
+
+
+
+/*LINK DECORATION AND STYLING*/
+.top-nav ul li a {
+    text-decoration: none;
+    color: rgb(212,212,212);
+    line-height: 70px;
+    text-align: center;
+    display: block;
+    transition: all .3s;
+}
+
+.top-nav ul li a:hover {
+    background-color: grey;
+    color: rgb(200, 0, 0);
+    transition: all .3s;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+@media only screen and (max-width: 800px) {
+
+	.top-nav {
+		display: none;
+	}
+
+       /*have to use z-index and position to get ontop of logo*/
+	.phone-nav {
+        z-index: 9999;
+		position: fixed;
+        Font-Family: 'Roboto Condensed', Sans-Serif;
+        Font-Size: 20px;
+        display: inherit;
+        height: 10vh;
+        width: 10vh;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .phone-nav ul {
+		
+        z-index: 9999;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .phone-nav ul li {
+		
+        z-index: 9999;
+        margin: 0;
+        padding: 0;
+    }
+
+    #phone-logo {
+        background-image: url(../assets/logo/SW-logo_basic.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgb(42, 42, 42);
+        height: 10vh;
+        width: 10vh;
+        line-height: 10vh;
+        border-bottom-right-radius: 20%;
+        color: transparent;
+        transition: all .1s .25s;
+    }
+
+    .dropdown {
+        display: block;
+        list-style: none;
+        z-index: 900;
+        width: 10vh;
+        background-color: rgba(45,45,45,.9);
+        height: 0;
+        transition: all .3s;
+
+    }
+
+    #phone-logo:hover {
+        border-bottom-right-radius: 0;
+        transition: border-bottom-right-radius .05s;
+    }
+
+    #phone-logo:hover .dropdown {
+        transition: all .3s .05s;
+        height: 40vh;
+        width: 200px;
+    }
+
+    /*using width 0 instead of display: none to keep color animation*/
+    .dropdown li {
+        margin: 0;
+        width: 0;
+        height: 10vh;
+    }
+
+    .dropdown li a {
+        text-decoration: none;
+    }
+
+    #phone-logo:hover .dropdown li {
+        width: 200px;
+    }
+
+	
+	/*have to use visibility instead of display: none; to apply transition*/
+    .dropdown li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 10vh;
+        text-align: center;
+		visibility: hidden;
+        color: rgb(212, 212, 212);
+    }
+
+    #phone-logo:hover .dropdown li a {
+		visibility: visible;
+		transition: visibility 0s .3s;
+    }
+
+	
+	
+    #phone-logo .dropdown li a:hover {
+        background-color: grey;
+        transition: all .3s;
+		color: rgb(141,0,0);
+    }
+	
+
+}
+
+
+#active {
+    background-color: rgb(100,100,100);
+	color: rgb(180, 0, 0);
+ }

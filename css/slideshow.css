@@ -1,0 +1,164 @@
+body {
+    width: 100%;
+    left: 0;
+    top: 0;
+	background-color: black;
+    margin: 0 auto;
+	overflow: hidden;
+}
+
+
+.mainLogo {
+    z-index: 10;
+	height: 70vh;
+	width: 50vw;
+	margin: 100px 25vw; 
+    background-size: fill;
+	background-image: url(../assets/logo/SW-logo.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*gets rid of bullet points in top right corner because the spans have a negative z-index*/
+.slideshow li {
+	list-style: none;
+}
+
+
+.slideshow li span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+    z-index: -1;
+    color: rgba(0,0,0,0);
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	opacity: 0;
+	animation: imageAnimation 20s linear infinite 0s;
+}
+.slideshow li:nth-child(1) span {
+	background-image: url(../assets/pictures/smoke.jpg);
+}
+.slideshow li:nth-child(2) span {
+	background-image: url(../assets/pictures/red.png);
+	animation-delay: 4s;
+}
+.slideshow li:nth-child(3) span {
+	background-image: url(../assets/pictures/no_face.jpg);
+	animation-delay: 8s;
+}
+.slideshow li:nth-child(4) span {
+	background-image: url(../assets/pictures/dark.jpg);
+	animation-delay: 12s;
+}
+.slideshow li:nth-child(5) span {
+	background-image: url(../assets/pictures/blur.jpg);
+	animation-delay: 16s;
+}
+
+
+
+/* Animation for the slideshow images */
+
+@keyframes imageAnimation {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% { opacity: 0 }
+}
+
+
+.social-buttons {
+	bottom: 10%;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	height: 4vw;
+}
+
+.social-buttons ul {
+	margin: 0 32.5vw;
+	padding: 0;
+	width: 40vw;
+	height: 4vw;
+
+}
+
+.social-buttons ul li {
+	height: 4vw;
+	width: 4vw;
+	padding: 0 2.3vw;
+	display: inline-block;
+}
+
+.social-buttons ul li a {
+	line-height: 4vw;
+	width: 4vw;
+	height: 4vw;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	transition: all .3s;
+}
+
+.social-buttons ul li a:hover  {
+    transform: scale(1.2,1.2);
+    box-shadow: black 0 0 100px;
+    transition: all .5s;
+}
+
+#facebook svg {
+	fill: #3b5998;
+}
+
+#twitter svg {
+    fill:  #0084b4;
+}
+
+#bandcamp svg {
+    fill: #629aa9;
+}
+
+#spotify svg {
+    fill: #84bd00;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .mainLogo {
+        width: 90vw;
+        margin: -50px 5vw;
+    }
+
+    .social-buttons ul {
+        margin: 0;
+        width: 100vw;
+        height: 10vw;
+
+    }
+
+    .social-buttons ul li {
+        height: 10vw;
+        width: 10vw;
+        padding: 0 7vw;
+    }
+
+    .social-buttons ul li a, .social-buttons ul li a:visited, .social-buttons ul li a:hover {
+        line-height: 10vw;
+        width: 10vw;
+        height: 10vw;
+    }
+}

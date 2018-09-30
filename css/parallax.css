@@ -1,0 +1,244 @@
+body {
+    width: 100vw;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+	background-color: rgb(42,42,42);
+    /*write about overflow-x in testing*/
+    overflow-x: hidden;
+}
+
+
+.parallax {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.parallax h1 {
+    line-height: 100vh;
+    text-align: center;
+    margin: 0;
+    font-family: "Roboto Condensed", Sans-Serif;
+    color: rgba(225, 0, 0, .9);
+    font-size: 20em;
+    width:100vw;
+
+
+}
+
+section {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+#para-1 {
+    height: 100vh;
+    top: 0;
+    background-image: url(../assets/pictures/black_and_white_1.jpg);
+}
+#para-2 {
+    height: 100vh;
+    top: 0;
+    background-image: url(../assets/pictures/black_and_white_3.jpg);
+}
+#para-3 {
+    height: 100vh;
+    top: 0;
+    background-image: url(../assets/pictures/black_and_white_2.jpg);
+}
+/*overflow: hidden makes section wrap around float divs*/
+.content {
+    height: 50vh;
+    overflow: hidden;
+	width: 100%;
+}
+
+
+.content h2 {
+	font-size: 2em;
+    font-family: "Roboto Condensed", Sans-Serif;
+}
+
+.content p {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.image-wrapper {
+    width: 15%;
+    float: left;
+    margin: 0 7.5%;
+    height: 50vh;
+    line-height: 50vh;
+}
+
+.image-wrapper img {
+    vertical-align: middle;
+    max-width: 20vw;
+    max-height: 20vw;
+    box-shadow: 0 0 10px 0px black;
+}
+
+.content-wrapper {
+    width: 60%;
+    float: right;
+	height: 40vh;
+	margin: 5vh 0;
+}
+
+.content-wrapper iframe {
+    max-width: 90%;
+}
+
+#about {
+    width: 70%;
+}
+.text-wrapper {
+	height: 20vh;
+    padding-right: 15px;
+    margin-bottom: 25px;
+    max-width: 80%;
+}
+
+.video {
+    height: 80vh ;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(23,23,23);
+    box-shadow: inset 0 0 10px 10px;
+	margin: 0;
+}
+
+.video iframe {
+    margin: 10vh 20vw;
+    padding: 0;
+    width: 60vw;
+    height: 60vh ;
+}
+
+#content-1 {
+    background-color: rgb(100,100,100);
+	color: rgb(212,212,212);
+}
+
+#content-2 {
+    background-color: rgb(212,212,212);
+}
+
+
+#content-3 {
+    background-color: rgb(212,212,212);
+}
+
+
+#content-4 {
+    background-color: rgb(100,100,100);
+	color: rgb(212,212,212);
+}
+
+.link {
+	text-decoration: none;
+	color: #3c52a3;
+	transition: color .1s;
+}
+
+.link:hover {
+	color: #647bd1;
+	transition: color .1s;
+}
+
+
+
+
+/*FOOTER START */
+.social-buttons {
+	bottom: 0;
+	width: 100vw;
+	left: 0;
+	height: 5vw;
+}
+
+.social-buttons ul {
+	margin: 0 32.5vw;
+	padding: 0;
+	width: 40vw;
+	height: 5vw;
+
+}
+
+.social-buttons ul li {
+	height: 3vw;
+	width: 3vw;
+	padding: 1vw 2.3vw;
+	display: inline-block;
+}
+
+.social-buttons ul li a {
+	line-height: 3vw;
+	width: 3vw;
+	height: 3vw;
+	text-align: center;
+	display: block;
+	border-radius: 50%;
+	transition: all .3s;
+}
+
+.social-buttons ul li a:hover  {
+    transform: scale(1.1,1.1);
+    box-shadow: black 0 0 25px;
+    transition: all .5s;
+}
+
+#facebook svg {
+	fill: #3b5998;
+}
+
+#twitter svg {
+    fill:  #0084b4;
+}
+
+#bandcamp svg {
+    fill: #629aa9;
+}
+
+#spotify svg {
+    fill: #84bd00;
+}
+/*FOOTER END */
+
+
+@media only screen and (max-width:1340px) {
+
+    .parallax h1 {
+        font-size: 15em;
+    }
+}
+
+@media only screen and (max-width:1010px) {
+
+    .parallax h1 {
+        font-size: 10em;
+    }
+}
+
+@media only screen and (max-width:675px) {
+
+    .parallax h1 {
+        font-size: 8em;
+    }
+}
+
+@media only screen and (max-width:555px) {
+
+    .parallax h1 {
+        font-size: 3em;
+    }
+}
