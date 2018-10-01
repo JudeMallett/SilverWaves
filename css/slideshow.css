@@ -12,8 +12,8 @@ body {
     z-index: 10;
 	height: 70vh;
 	width: 50vw;
-	margin: 100px 25vw; 
-    background-size: fill;
+	margin: 100px 25vw;
+    background-size: contain;
 	background-image: url(../assets/logo/SW-logo.svg);
 	background-repeat: no-repeat;
 	background-position: center;

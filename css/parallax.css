@@ -158,30 +158,30 @@ section {
 /*FOOTER START */
 .social-buttons {
 	bottom: 0;
-	width: 100vw;
+	width: 100%;
 	left: 0;
-	height: 5vw;
+	height: 100px;
 }
 
 .social-buttons ul {
-	margin: 0 32.5vw;
+	margin: 0 auto;
 	padding: 0;
-	width: 40vw;
-	height: 5vw;
+	width: 440px;
+	height: 100px;
 
 }
 
 .social-buttons ul li {
-	height: 3vw;
-	width: 3vw;
-	padding: 1vw 2.3vw;
+	height: 70px;
+	width: 70px;
+	padding: 15px 18px;
 	display: inline-block;
 }
 
 .social-buttons ul li a {
-	line-height: 3vw;
-	width: 3vw;
-	height: 3vw;
+	line-height: 70px;
+	width: 70px;
+	height: 70px;
 	text-align: center;
 	display: block;
 	border-radius: 50%;
@@ -226,17 +226,14 @@ section {
     }
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:780px) {
 	.parallax {
-		height: 50vh;	
+		height: 50vh;
+    background-attachment: scroll;
 	}
-	
+
 	.parallax h1 {
-		line-height: 50vh;	
-	}
-	
-	.social-buttons, .social-buttons ul {
-		height: 10vw;	
+		line-height: 50vh;
 	}
 }
 
