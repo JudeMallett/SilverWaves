@@ -237,6 +237,10 @@ section {
 	.parallax h1 {
 		line-height: 50vh;	
 	}
+	
+	.social-buttons, .social-buttons ul {
+		height: 10vw;	
+	}
 }
 
 @media only screen and (max-width:675px) {
