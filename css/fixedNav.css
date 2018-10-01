@@ -157,12 +157,12 @@
 
     }
 
-    #phone-logo:active{
+    #phone-logo:hover{
         border-bottom-right-radius: 0;
         transition: border-bottom-right-radius .05s;
     }
 
-    #phone-logo:active .dropdown {
+    #phone-logo:hover .dropdown {
         transition: all .3s .05s;
         height: 40vh;
         width: 200px;
@@ -179,7 +179,7 @@
         text-decoration: none;
     }
 
-    #phone-logo:active .dropdown li{
+    #phone-logo:hover .dropdown li{
         width: 200px;
     }
 
@@ -195,7 +195,7 @@
         color: rgb(212, 212, 212);
     }
 
-    #phone-logo:active .dropdown li a {
+    #phone-logo:hover .dropdown li a {
 		visibility: visible;
 		transition: visibility 0s .3s;
     }
