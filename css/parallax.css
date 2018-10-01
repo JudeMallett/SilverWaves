@@ -41,17 +41,14 @@ section {
 }
 
 #para-1 {
-    height: 100vh;
     top: 0;
     background-image: url(../assets/pictures/black_and_white_1.jpg);
 }
 #para-2 {
-    height: 100vh;
     top: 0;
     background-image: url(../assets/pictures/black_and_white_3.jpg);
 }
 #para-3 {
-    height: 100vh;
     top: 0;
     background-image: url(../assets/pictures/black_and_white_2.jpg);
 }
