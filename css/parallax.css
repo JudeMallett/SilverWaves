@@ -229,6 +229,16 @@ section {
     }
 }
 
+@media only screen and (max-width:800px) {
+	.parallax {
+		height: 50vh;	
+	}
+	
+	.parallax h1 {
+		line-height: 50vh;	
+	}
+}
+
 @media only screen and (max-width:675px) {
 
     .parallax h1 {
